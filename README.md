@@ -1,4 +1,4 @@
-# Test Store Project - GUI Automation test project written in Java, Selenide :lady_beetle:
+# 🔍 Test Store Project - GUI Automation with Java & Selenide 🛠️
 This project serves as a demonstration of my GUI automation skills.
 <img width="812" alt="image" src="https://github.com/satyricon77/teststore/assets/90909315/18e94ca4-5454-4523-ae2b-f2c5f55b8c75">
 
@@ -6,11 +6,7 @@ This project serves as a demonstration of my GUI automation skills.
 The tests are conducted on a e-commerce test store which is alike real stores.
 Store URL: https://teststore.automationtesting.co.uk
 
-# Getting Started :bulb:
-Prerequisites:
-- Java (JDK 17)
-- Maven
-# Technology Stack:
+# Technology Stack :bulb::
 - Programming language: Java
 - Automation framework: Selenide
 - Testing framework: TestNG
