@@ -82,7 +82,7 @@ public class CustomerAccessTest extends BasicTest {
 
     @Test(priority = 3, description = "Given a user on the homepage," +
             " when they attempt to log in with invalid credentials," +
-            " then validation error should appear which indicated to invalid data provided.")
+            " then validation error should appear which indicates to invalid data provided.")
     public void checkCustomerLoginFlowWithInvalidCredentialsTest() {
         log("Starting checkCustomerLoginFlowWithInvalidCredentialsTest...");
         navigateToPage(BASE_URL);

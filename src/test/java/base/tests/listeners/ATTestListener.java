@@ -6,7 +6,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import report.ExtentManager;
 
-import static utils.ScreeShotCapture.takeSnapShot;
+import static utils.ScreenshotCapture.takeSnapShot;
 
 public class ATTestListener extends BasePage implements ITestListener {
 

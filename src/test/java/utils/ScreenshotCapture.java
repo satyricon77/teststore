@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ScreeShotCapture {
+public class ScreenshotCapture {
     public static String screeShotDestinationPath;
 
     public static String takeSnapShot(String name) {

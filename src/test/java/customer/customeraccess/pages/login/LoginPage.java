@@ -8,11 +8,9 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginPage extends BasePage {
     private final SelenideElement LOGIN_FORM = $x("//section[@class='login-form']");
-    private final SelenideElement CREATE_ACCOUNT_HYPERLINK = $x("//div[@class='no-account']//*[@*='display-register-form']");
 
     public void clickCreateAccountHyperLink() {
-        CREATE_ACCOUNT_HYPERLINK
-                .shouldBe(visible)
+        $x("//div[@class='no-account']//*[@*='display-register-form']").shouldBe(visible)
                 .click();
     }
 

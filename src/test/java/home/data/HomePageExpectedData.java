@@ -102,6 +102,10 @@ public class HomePageExpectedData {
             this.POPULAR_PRODUCT_CARD = new PopularProductCard(productTitle, productCurrentPrice);
         }
 
+        public PopularProductCard getProduct() {
+            return POPULAR_PRODUCT_CARD;
+        }
+
         public static List<PopularProductCard> getPopularProducts() {
             return Arrays.asList(values()).stream()
                     .map(productCard -> productCard.POPULAR_PRODUCT_CARD)
