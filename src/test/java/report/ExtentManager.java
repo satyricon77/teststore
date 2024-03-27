@@ -9,7 +9,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static utils.ScreeShotCapture.screeShotDestinationPath;
+import static utils.ScreenshotCapture.screeShotDestinationPath;
 
 public class ExtentManager extends BasePage {
     public static ExtentReports extentReport;

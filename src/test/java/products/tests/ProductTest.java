@@ -19,9 +19,9 @@ import java.text.SimpleDateFormat;
 import static base.pages.BasePage.faker;
 import static base.pages.BasePage.navigateToPage;
 import static customer.customeraccess.data.registration.RegisterCustomerExpectedData.SOCIAL_TITLE;
+import static home.data.HomePageExpectedData.PopularProduct.PRINTED_T_SHIRT;
 import static products.data.CheckoutPageExpectedData.*;
 import static products.data.ProductsExpectedData.MUG_PRODUCT_TITLE;
-import static products.data.ProductsExpectedData.T_SHIRT_PRODUCT_TITLE;
 import static report.ExtentManager.log;
 
 public class ProductTest extends BasicTest {
@@ -52,8 +52,8 @@ public class ProductTest extends BasicTest {
     }
 
     @Test(priority = 1, dataProvider = "sortingTypes", dataProviderClass = ProductsDataProvider.class,
-            description = "Given a user on a webpage with product listings,\n" +
-                    "When they input a search term and choose a sorting type from a dropdown,\n" +
+            description = "Given a user on a webpage with product listings," +
+                    "When they input a search term and choose a sorting type from a dropdown," +
                     "Then the products should be sorted according to the selected sorting type.")
     public void checkProductSortingTest(ProductsExpectedData.SortingType sortingType) {
         log("Starting checkProductSortingTest...");
@@ -69,16 +69,16 @@ public class ProductTest extends BasicTest {
                 "Products on product search result page are not sorted in accordance with: " + sortingType.getSortingType() + " sorting type");
     }
 
-    @Test(priority = 2, description = "Given a user's interaction with a website to purchase a product,\n" +
+    @Test(priority = 2, description = "Given a user's interaction with a website to purchase a product," +
             "When they navigate, search, select, and customize the product," +
-            "Then they proceed through checkout steps including personal information, address, shipping method, and payment,\n" +
+            "Then they proceed through checkout steps including personal information, address, shipping method, and payment," +
             "Finally, the system confirms the order with a message.")
     public void buyProductTest() {
         log("Starting buyProductTest...");
         navigateToPage(BASE_URL);
 
-        homePage.inputSearchBox(T_SHIRT_PRODUCT_TITLE);
-        searchResultPage.clickProductByItsName(T_SHIRT_PRODUCT_TITLE);
+        homePage.inputSearchBox(PRINTED_T_SHIRT.getProduct().getProductTitle());
+        searchResultPage.clickProductByItsName(PRINTED_T_SHIRT.getProduct().getProductTitle());
 
         log("Checking product info on product page...");
         Product productOnProductPage = productPage.getProduct();

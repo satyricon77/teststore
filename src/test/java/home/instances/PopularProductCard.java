@@ -20,6 +20,10 @@ public class PopularProductCard {
         this.productDiscountPercent = productDiscountPercent;
     }
 
+    public String getProductTitle() {
+        return productTitle;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
