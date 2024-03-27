@@ -10,7 +10,7 @@ Store URL: https://teststore.automationtesting.co.uk
 Prerequisites:
 - Java (JDK 17)
 - Maven
-Technology Stack:
+# Technology Stack:
 - Programming language: Java
 - Automation framework: Selenide
 - Testing framework: TestNG
