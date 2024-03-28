@@ -5,7 +5,7 @@ import org.volovich.pages.home.HomePage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.volovich.utils.products.ExpectedProduct;
-import org.volovich.utils.products.ProductsDataProvider;
+import org.volovich.data_provider.ProductsDataProvider;
 import org.volovich.utils.products.ProductsExpectedData;
 import org.volovich.model.products.Product;
 import org.volovich.pages.products.CheckoutPage;
@@ -23,7 +23,7 @@ import static org.volovich.tests.customers.customeraccess.data.registration.Regi
 import static org.volovich.utils.home.HomePageExpectedData.PopularProduct.PRINTED_T_SHIRT;
 import static org.volovich.utils.products.CheckoutPageExpectedData.*;
 import static org.volovich.utils.products.ProductsExpectedData.MUG_PRODUCT_TITLE;
-import static org.volovich.report.ExtentManager.log;
+import static org.volovich.utils.report.ExtentManager.log;
 
 public class ProductTest extends BasicTest {
     private HomePage homePage;

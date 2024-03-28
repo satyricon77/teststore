@@ -1,12 +1,13 @@
 package org.volovich.utils;
-
-import com.codeborne.selenide.Screenshots;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import static com.codeborne.selenide.Selenide.screenshot;
 
 public class ScreenshotCapture {
     public static String screeShotDestinationPath;
@@ -17,7 +18,7 @@ public class ScreenshotCapture {
         screeShotDestinationPath = "/screenshots/" + formatter + ".png";
 
         try {
-            FileUtils.copyFile(Screenshots.takeScreenShotAsFile(), new File(destFile));
+            FileUtils.copyFile(screenshot(OutputType.FILE), new File(destFile));
         } catch (IOException e) {
             e.printStackTrace();
         }

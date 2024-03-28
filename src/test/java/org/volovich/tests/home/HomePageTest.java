@@ -16,7 +16,7 @@ import static org.volovich.AppConstants.BASE_URL;
 import static org.volovich.pages.base.BasePage.navigateToPage;
 import static org.volovich.utils.home.HomePageExpectedData.Banner.getBannersContent;
 import static org.volovich.utils.home.HomePageExpectedData.PopularProduct.getPopularProducts;
-import static org.volovich.report.ExtentManager.log;
+import static org.volovich.utils.report.ExtentManager.log;
 
 public class HomePageTest extends BasicTest {
     private HomePage homePage;

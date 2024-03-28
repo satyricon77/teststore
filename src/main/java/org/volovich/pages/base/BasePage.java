@@ -1,9 +1,10 @@
 package org.volovich.pages.base;
 
 import com.github.javafaker.Faker;
+import org.volovich.utils.report.ExtentManager;
 
 import static com.codeborne.selenide.Selenide.open;
-import static report.ExtentManager.log;
+
 
 public class BasePage {
     public static Faker faker = new Faker();

@@ -3,7 +3,7 @@ package org.volovich.utils;
 import org.testng.Assert;
 
 import static org.testng.AssertJUnit.fail;
-import static org.volovich.report.ExtentManager.pass;
+import static org.volovich.utils.report.ExtentManager.pass;
 
 public class Verify {
     public static void verifyEquals(Object actual, Object expected, String passMessage, String failureMessage) {

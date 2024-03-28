@@ -1,6 +1,7 @@
-package org.volovich.utils.products;
+package org.volovich.data_provider;
 
 import org.testng.annotations.DataProvider;
+import org.volovich.utils.products.ProductsExpectedData;
 
 import java.util.Arrays;
 

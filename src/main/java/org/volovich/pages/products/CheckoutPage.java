@@ -1,7 +1,7 @@
 package org.volovich.pages.products;
 
+import org.volovich.driver.CustomConditions;
 import org.volovich.pages.base.BasePage;
-import base.customconditions.CustomConditions;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;

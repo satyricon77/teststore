@@ -1,15 +1,15 @@
-package org.volovich.report;
+package org.volovich.utils.report;
 
 import org.volovich.pages.base.BasePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.volovich.utils.ScreenshotCapture;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static org.volovich.utils.ScreenshotCapture.screeShotDestinationPath;
 
 public class ExtentManager extends BasePage {
     public static ExtentReports extentReport;
@@ -25,7 +25,7 @@ public class ExtentManager extends BasePage {
 
     public static ExtentReports setupExtentReport(String testName) {
         extentReport = new ExtentReports();
-        ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/org/volovich/report/"
+        ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/org/volovich/utils/report/"
                 + generateExtentReportMetaInfo(testName) + ".html");
         extentReport.attachReporter(spark);
 
@@ -70,7 +70,7 @@ public class ExtentManager extends BasePage {
     }
 
     public synchronized static void attachScreenShot(){
-        getTest().addScreenCaptureFromPath(screeShotDestinationPath);
+        getTest().addScreenCaptureFromPath(ScreenshotCapture.screeShotDestinationPath);
     }
 }
 

@@ -4,7 +4,7 @@ import org.volovich.pages.base.BasePage;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.volovich.report.ExtentManager;
+import org.volovich.utils.report.ExtentManager;
 
 import static org.volovich.utils.ScreenshotCapture.takeSnapShot;
 

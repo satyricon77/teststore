@@ -16,7 +16,7 @@ import org.volovich.utils.Verify;
 
 import static org.volovich.AppConstants.BASE_URL;
 import static org.volovich.pages.base.BasePage.*;
-import static org.volovich.report.ExtentManager.log;
+import static org.volovich.utils.report.ExtentManager.log;
 
 public class CustomerAccessTest extends BasicTest {
     private LoginPage loginPage;
